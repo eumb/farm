@@ -1,0 +1,80 @@
+<template name="dashboard">
+  
+  
+
+  <div class="ui stackable grid ">
+    <div class="row">  
+      <div class="ui four wide column">
+     
+     <ul>
+          
+	    <div id = "card" class="ui container center aligned card">
+		  <div class="content">
+		    
+		    <div class="header">
+		      Tensiunea umiditatii solului
+		       <span class="centered floated"><strong>Cbar (kPa)</strong></span>
+		    </div>
+		    <div class="description">
+		      <p>Ultimele valori ale tensiunii umezeli solului</p>
+		    </div>
+		  </div>
+		  <div class="extra content">
+		   <div class="ui list">
+			 {{#each sensorw_1}}
+		      <div class="item">Umiditate 10cm <strong> {{this}} cb </strong></div>
+		      {{/each}} 
+		      {{#each sensorw_2}}
+		      <div class="item">Umiditate 30cm <strong> {{this}} cb </strong></div>
+		      {{/each}} 
+		      {{#each sensorw_3}}
+		      <div class="item">Umiditate 50cm <strong> {{this}} cb </strong></div>
+		   	{{/each}} 
+		  </div>
+		  </div>
+		</div>
+        
+        </ul>
+      </div>
+      <div class="ui centered eight wide column">
+       <div>
+         {{> c3 data=myChartDataHumid id="chart1"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">  
+      <div class="ui four wide column">
+  
+		       <div id = "card" class="ui container center aligned card">
+		  <div class="content">
+		    
+		    <div class="header">
+		    Temperatura
+		    <span class="centered floated"><strong>°C</strong></span>
+		    </div>
+		    <div class="description">
+		      <p>Ultima valoare inregistrata a temperaturii solului</p>
+		    </div>
+		  </div>
+		  <div class="extra content">
+		  	{{#each sensortemp}}
+		    <h2 class ="centered">{{this}} <strong>°C</strong> </h2>
+		      <span>{{created_at}}</span>
+			{{/each}}
+		  
+		  </div>
+		</div>	
+
+      </div>
+      <div class="ui eight wide column">
+     <div>
+          {{> c3 data=myChartDataTemp id="chart2"}}
+        </div>
+      </div>
+    </div>
+
+	
+  </div>
+</template>
+

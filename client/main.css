@@ -1,0 +1,48 @@
+/* CSS declarations go here */
+#footer {
+
+	position: relative;
+	bottom: 0;
+}
+
+
+#card{
+
+	margin-top: 50%;
+	margin-bottom: 50%;
+}
+
+#logForm{
+
+	margin-top: 10em;
+}
+
+#sidebar{
+	
+
+	
+}
+
+#navbar{
+	
+	min-height: 7em;
+}
+
+
+.at-form{
+
+	margin-top: 20px;
+	margin-bottom:20px;
+	
+}
+
+
+#at-field-name{
+	color:red;  /*for testing*/
+}
+#at-btn{
+	background-color: black;
+	color:white;
+	font-weight: bold;
+}
+

@@ -1,0 +1,42 @@
+<template name="sidebar"> 
+  
+
+  <div id= "sidebar" class="ui  visible inverted left vertical sidebar menu">
+    
+    <div class="item">
+      <h2 class="ui borderless item">
+          Smart Agro
+      </h2>
+    </div>
+    
+    <a class="item">
+      <i class="home icon"></i>
+      Alerte
+    </a>
+    <a class="item">
+      <i class="block layout icon"></i>
+      Istoric
+    </a>
+    <a class="item">
+      <i class="smile icon"></i>
+      Administrare
+    </a>
+	<div class="ui item">
+	    Senzori
+	
+	    <div class="menu">
+	      
+          {{#each sensorsname}}
+            <a class="item senzor_name">{{this}}</a>
+          {{/each}}
+        
+        
+	    </div>
+  	</div>
+  </div>
+
+
+
+</template>
+
+

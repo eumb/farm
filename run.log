@@ -1,0 +1,25 @@
+[[[[[ /var/www/webapps/farm ]]]]]
+
+=> Started proxy.
+=> Meteor 1.4.3.1 is available. Update this project with 'meteor update'.
+=> Started your app.
+
+=> App running at: http://localhost:3000/
+[34mI20170225-15:51:56.499(2)? [39msubscribed to sensornames
+[34mI20170225-16:23:40.408(2)? [39msubscribed to sensornames
+[34mI20170225-19:11:12.916(2)? [39mException while polling query {"collectionName":"sensorvalues","selector":{},"options":{"transform":null}}: MongoError: connection 3 to mongoDB:27001 closed
+[34mI20170225-19:11:12.917(2)? [39m    at Object.Future.wait (/home/eumb/.meteor/packages/meteor-tool/.1.4.2_7.xh7ttf++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:449:15)
+[34mI20170225-19:11:12.918(2)? [39m    at [object Object]._.extend._nextObject (packages/mongo/mongo_driver.js:1024:47)
+[34mI20170225-19:11:12.919(2)? [39m    at [object Object]._.extend.forEach (packages/mongo/mongo_driver.js:1058:22)
+[34mI20170225-19:11:12.919(2)? [39m    at [object Object]._.extend.getRawObjects (packages/mongo/mongo_driver.js:1107:12)
+[34mI20170225-19:11:12.920(2)? [39m    at [object Object]._.extend._pollMongo (packages/mongo/polling_observe_driver.js:153:44)
+[34mI20170225-19:11:12.921(2)? [39m    at Object.task (packages/mongo/polling_observe_driver.js:90:12)
+[34mI20170225-19:11:12.922(2)? [39m    at [object Object]._.extend._run (packages/meteor.js:807:18)
+[34mI20170225-19:11:12.922(2)? [39m    at packages/meteor.js:785:14
+[34mI20170225-19:11:12.923(2)? [39m    - - - - -
+[34mI20170225-19:11:12.924(2)? [39m    at Function.MongoError.create (/home/eumb/.meteor/packages/npm-mongo/.2.2.16_1.19ed2jn++os+web.browser+web.cordova/npm/node_modules/mongodb-core/lib/error.js:29:11)
+[34mI20170225-19:11:12.925(2)? [39m    at Socket.<anonymous> (/home/eumb/.meteor/packages/npm-mongo/.2.2.16_1.19ed2jn++os+web.browser+web.cordova/npm/node_modules/mongodb-core/lib/connection/connection.js:198:22)
+[34mI20170225-19:11:12.930(2)? [39m    at Socket.g (events.js:260:16)
+[34mI20170225-19:11:12.931(2)? [39m    at emitOne (events.js:77:13)
+[34mI20170225-19:11:12.932(2)? [39m    at Socket.emit (events.js:169:7)
+[34mI20170225-19:11:12.933(2)? [39m    at TCP._onclose (net.js:487:12)

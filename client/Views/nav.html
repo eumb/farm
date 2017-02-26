@@ -1,0 +1,16 @@
+<template name="nav">
+  <div id="navbar" class="ui inverted borderless menu">
+ 
+    <div id="right_menu" class="right menu">
+                    {{#if currentUser}}
+                        <div class="right header item"> Hello {{userInfo}}</div>
+                        <a class="item logout" href="#">Logout</a>
+
+                        {{else}}
+                    <!--     <a class="active item" href="{{pathFor route='/'}}">The mission</a>
+                      <a class="item" href="{{pathFor route='/'}}">Success Stories</a> -->
+                       
+                    {{/if}}
+    </div>
+  </div>
+</template>
