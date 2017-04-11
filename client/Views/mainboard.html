@@ -1,0 +1,162 @@
+<template name="mainboard">
+	
+
+
+<div class="ui stackable grid fluid ">
+
+	<h1>{{_ "mainboard_title"}}</h1>
+
+</div>
+
+	<div class="ui stackable grid centered fluid raised segment ">
+
+
+      				
+      				<div class=" ui row ">  
+		               
+		        	
+                        <div class="cards">
+                     	
+		                   	<div id = "card" class="ui card">
+								<div class="content">			    
+								    <div class="header left floated card_title">
+								      {{_ "vane_header"}}
+								       
+								    </div>
+								   
+								</div>
+								  <div class="extra center aligned content">
+								   <div class="ui list">
+									 
+										<h1>{{$.Session.get 'sensormeteo_vane'}}</h1>
+								   	
+								  </div>
+								  </div>
+							</div>
+
+			           		<div id = "card" class="ui card">
+							  <div class="content">
+							    
+							    <div class="header left floated card_title">
+							      {{_ "ane_header"}}
+							       <span class="centered floated"></span>
+							    </div>
+							 
+							  </div>
+							  <div class="extra center aligned content">
+							   <div class="ui list">
+								
+									<h1>{{$.Session.get 'sensormeteo_ane'}} km/h</h1>
+							   
+							  </div>
+							  </div>
+							</div>
+
+                        </div>
+
+                         <div class="cards">
+                     
+		                	<div id = "card" class="ui card">
+							  <div class="content">
+							    
+							    <div class="header left floated card_title">
+							      {{_ "pluv1_header"}}
+							       <span class="centered floated"></span>
+							    </div>
+							 
+							  </div>
+							  <div class="extra center aligned content">
+							   <div class="ui list">
+								
+									<h1>{{$.Session.get 'sensormeteo_pluv1'}} mm</h1>
+							   
+							  </div>
+							  </div>
+							</div>
+
+			           		<div id = "card" class="ui    card">
+							  <div class="content">
+							    
+							    <div class="header  left floated card_title">
+							      {{_ "air_humid_header"}}
+							       <span class="centered floated"></span>
+							    </div>
+							   
+							  </div>
+							  <div class="extra center alignedcontent">
+							   <div class="ui list">
+								
+									<h1>{{$.Session.get 'sensorair_humid'}} %</h1>
+							   	
+							  </div>
+							  </div>
+							</div>
+
+                        </div>
+                          <div class="cards">
+                 
+		                	    <div id = "card" class="ui   card">
+									<div class="content">			    
+									    <div class="header  left floated card_title">
+									     {{_ "air_press_header"}}
+									       
+									    </div>
+									   
+									</div>
+									  <div class="extra center aligned content">
+									   <div class="ui list">
+										 
+											<h1>{{$.Session.get 'sensorair_pressure_mmhg'}} mmHg</h1>
+									   	
+								 
+									  </div>
+									  </div>
+								</div>
+
+			           		    <div id = "card" class="ui  card">
+								  <div class="content">
+								    
+								    <div class="header left floated card_title">
+								      {{_ "air_temp_header"}}
+								      </div>
+								   </div>
+								  <div class="extra center aligned content">
+								   <div class="ui list">
+								
+										<h1>{{$.Session.get 'sensorair_temp'}} <strong>°C</strong> </h1>
+								   
+								  </div>
+								  </div>
+								</div>
+                    	</div>
+
+</div>
+</div>
+<div class="ui stackable grid fluid ">
+
+<h1>{{_ "mainboard_info"}}</h1>
+
+</div>
+<div id="mainboard_info" class="ui stackable grid centered fluid raised segment ">
+
+
+
+	                <div class="row">  
+			                <div class="ui eight wide column">
+			                        <h1 class="ui fluid  raised segment">{{_ "no_reco"}}</h1>
+			                </div>
+			             
+
+	                </div>	
+                    <div class="row">  
+		            
+		                  <div class="ui eight wide column">               
+	                        <h1 class="ui fluid  raised segment">{{_ "no_alert"}}</h1>
+                   		</div>
+
+	                </div>	
+	              
+
+
+</div>
+</template>

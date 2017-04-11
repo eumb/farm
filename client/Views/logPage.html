@@ -1,0 +1,165 @@
+<template name="logPage">
+
+
+  <!-- <div class="ui container"> -->
+  	
+   	  <div class="mainjumbo">
+ 		
+   	  <div id="logpagemenu" class="ui borderless menu">
+   	  	<div id="powered_login" class="item">
+   	  		NOKIA
+   	  	</div>
+   	  	<div class="logins right menu">
+   	  		<div class="log login_menu item">{{_ "login"}}</div>
+          <div class="log register_menu item">{{_ "register"}}</div>
+   	  		<!-- <div class="log language_change item">RO / EN</div> -->
+          <div class="log_small ui right dropdown item">
+                {{_"lang"}}
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="ui list">
+                  {{#each languages}}
+                    <div class="item">
+                    <div id ="languages" data-action="change-language" data-language="{{code}}">{{labels.name}}</div>
+                    </div>
+                  {{/each}}
+                </div> 
+               
+              </div>
+          </div>
+   	  	</div>
+
+   	 
+   	  </div>
+ 		  
+ 		
+ 			<div >
+      <p id ="main_title_login">
+
+        <span>CERES</span> <span id="green_title">Smart Agriculture</span>
+
+      </p>
+      </div>
+        
+ 		
+   	   </div>
+		
+   	 
+
+   	 <div class="ui grid">
+  <div class="four wide column">
+    <img>
+  </div>
+  <div class="eight wide column">
+    <article id="maininfo">
+			<p>{{_ "main_text"}}</p>
+			</article>
+  </div>
+  <div class="four wide column">
+    <p></p>
+  </div>
+</div>
+
+   	 <div class="ui grid">
+  <div class="four wide column">
+    
+  </div>
+  <div class="eight wide column">
+   
+	   <div class="ui segment">
+		    <img class="ui large left floated image" src="waspmote-smart-agriculture.jpg">	
+		    
+		    <article id="maininfo">
+					{{_ "second_text"}}
+					</article>
+	  </div>
+	</div>
+  <div class="four wide column">
+    
+  </div>
+</div>
+
+
+
+
+
+<div id="login_modal" class="ui modal">
+  {{> atForm}}
+</div>
+
+<div id="register_modal" class="ui modal">
+  {{> atForm state='signUp'}}
+</div>
+
+
+
+
+
+  <!--   
+    <div id ="maininfo" class=" middle floated aligned three column row">
+      			
+
+    
+  </div>
+ -->
+    
+    <!-- <img id ="jumboimage" src="shutterstock_75311899.jpg" alt="jumboimage"> -->
+  
+      <!-- div class="logincontainer">	
+		   	{{> atForm}}
+	  </div>
+ -->
+	 
+ <!--  </div> -->
+
+
+
+
+
+
+<!-- <div>
+
+
+	 <h1 id="colorheader">
+		   <div id="logo">NOKIA</div>
+		   <div class="logincontainer">	
+		   	{{> myAtForm}}
+		   </div>
+		   
+     </h1>
+
+</div>
+
+ -->
+
+<!-- 	
+<div class="ui center aligned two column grid">
+		<div class = "row">
+	
+			<h1 class="ui">
+          		Smart Agro
+      		</h1>
+			
+		</div>
+			
+		<div class="row">
+			
+			
+			<div class="ui text container">
+		     
+
+
+		      
+		      
+   			</div>
+
+
+
+		
+		</div>	
+	
+	</div>
+ -->
+
+
+</template>

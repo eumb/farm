@@ -1,0 +1,63 @@
+{"no_alert":"Nu exista alerte disponibile",
+"no_reco":"Nici o recomandare",
+"change_language":"Limba",
+"vane_header":"Directie vant",
+"vane_description":"Directia curenta a vantului",
+"ch_desc":"Configurare senzori",
+"update_desc" : "Modifica",
+"nodename":"ID Senzor",
+"tele_title":"Stare senzori",
+"chg":"Stare incarcare",
+"chg_cur":"Curent incarcare panou solar",
+"bat_lev":"Nivel baterie",
+"bat_volt":"Tensiune baterie",
+"last_upd":"Ultima valoare",
+"mainboard":"Acasa",
+"hist":"Istoric date",
+"admin":"Administrare",
+"sensors":"Senzori",
+"logout":"Iesire",
+"hello":"Salut ",
+"login":"Conectare",
+"register":"Inregistrare",
+"lang":"Limba",
+"main_text":"Companiile agricole traditionale au aplicate de sute de ani aceleasi unelte si procese care in timp au devenit invechite.
+Cele mai multe organizatii ce lucreaza in agricultura au realizat ca tehnologia are potentialul de le usura muncile zilnice , de a le reduce pierderile
+si de a imbunatati atat calitatea cat si randamentul.
+
+Retelele de senzori fara fir au deschis o gama larga de oportunitati pentru managementul fermelor si al organizatiilor agricole. Obtinerea in timp
+real a informatiilor referitoare la apa, sol sau aer a fiecarui teren, permite luarea de decizii strategice pentru salvarea resurselor si imbunatatirea randamentului.
+
+",
+"second_text":"Am dezvoltat un sistem inteligent de monitorizare al solului, calitatii apei , stocarii apei si a parametrilor de mediu, prin instalarea catorva echipamente Waspmote Plug & Sense Smart Agriculture.
+Montate in teren, acestea ofera informatii despre temperatura solului, umiditatea acestuia, temperatura , umiditatea si presiunea aerului.
+Waspmote Plug & Sense! Smart Agriculture instalate in exterior colecteaza date si despre viteza si directia vantului cat si cantitatea de precipitatii. Celelalte monitorizeaza temperatura si umiditatea solului.",
+"exportButton":"Export",
+"export_humid_all":"Export toate datele de umiditate",
+"login":"Intra",
+"ane_header":"Viteza vant",
+"ane_description":"Viteza vantului 0-240 km/h",
+"pluv1_header":"Precipitatii curente",
+"pluv1_desc":"Precipitatii pentru periada curenta",
+"pluv2_header":"Precipitatii 1h",
+"pluv2_desc":" Precipitatii in ultima ora",
+"pluv3_header":"Precipitatii 24 h",
+"pluv3_desc":"Precipitaii acumulate in ultimele 24 ore",
+"air_temp_header":"Temperatura atmosferica",
+"air_temp_desc":"Temperatura atmosferica curenta; interval operare: -40 ~ +85 ºC",
+"air_press_header":"Presiunea atmosferica",
+"air_press_desc":"Presiunea atmosferica in bar",
+"air_humid_header":"Umiditatea atmosferica",
+"air_humid_desc":"Valoarea actuala a umiditatii aerului in %",
+"soil_temp_header":"Temperatura solului",
+"soil_temp_desc":"Ultima valoare inregistrata a temperaturii solului",
+"soil_humid_header":"Tensiunea umiditatii solului",
+"soil_humid_desc":"Ultimele valori ale tensiunii umezelii solului",
+"h10":"Umiditate 10cm",
+"h30":"Umiditate 30cm",
+"h50":"Umiditate 50cm",
+"mainboard_title":"Ultimele informatii",
+"mainboard_info":"Recomandari si alerte",
+"new_comment":"Adauga/modifica comentariu"
+}
+ 

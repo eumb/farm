@@ -1,0 +1,81 @@
+<template name="sidebar"> 
+  
+
+  <div id= "sidebar" class="ui  visible sidebar  inverted left vertical menu">
+    
+     <header class="ui borderless item"><div id ="main_title">CERES</div>
+
+      <span>
+            <div id="second_title">SMART Agriculture</div>
+           
+      </span>
+      <span id="powered"><i>powered by </i>NOKIA</span>
+          
+
+      </header>
+      <div id = "spacing"></div>
+    <a href ="/mainboard" class="item item_menu">
+      <i class="large home icon"></i>
+      {{_ "mainboard"}}
+    </a>
+    
+    <div class="ui divider"></div>
+    <a href ="/history" class="item item_menu">
+       <i class="large block layout icon"></i>
+      {{_ "hist"}}
+    </a> 
+    <div class="ui divider"></div>
+    
+   
+    <a href="/administration" class="item item_menu">
+      <i class="large configure icon"></i>
+      {{_ "admin"}}
+    </a>
+  
+
+    
+    <div class="ui divider"></div>
+ 
+<!-- 
+     <div class="ui accordion field">
+      <div class="title active">
+        <i class="icon dropdown"></i>
+        Optional Details
+      </div>
+        <div class="content field active">
+        <label class="transition visible">Maiden Name</label>
+      </div>
+      </div>
+
+
+ -->
+  	<div class="ui accordion field item ">
+  	   <div class="item title item_menu senzor_menu">
+            {{_ "sensors"}}
+            <i class="large dropdown icon"></i>
+      </div> 
+      <div class="content field">
+          <div class="active content senzor_menu_items transition visible">
+               {{#each sensorsname}}
+                <ul>
+                  <a href="/dashboard" data-nodename={{nodename}} class="item senzor_name">
+                  {{description}}
+                  </a>
+                </ul>
+              {{/each}}
+          </div>
+  	   </div>
+    </div>
+    <div class="ui divider"></div>
+
+ 
+    </div> 
+</template>
+<!-- 
+<template name="sensornodename">
+    
+      {{description}}
+
+</template>
+ -->
+

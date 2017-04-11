@@ -1,0 +1,28 @@
+<template name="nav">
+  <div id="navbar" class="ui borderless menu">
+    <div class="item nav_item page_title">
+          
+           {{$.Session.get 'itemMenu'}}
+
+
+        </div>
+    <div id="right_menu" class="right menu">
+    {{#if currentUser}}
+      
+     
+        <div class="nav_itemright item">
+          <i class="large user icon"></i>
+            <span class="nav_item">
+              <!-- {{_ "hello"}}, --> {{userInfo}}
+            </span>
+          </div>
+  
+          <div class="right item">
+          <a class="right nav_item item logout" href="#"><i class="large sign out icon"></i>
+          {{_ "logout"}}</a>
+          </div>
+    {{/if}}
+    
+  </div>
+</div> 
+</template>

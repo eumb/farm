@@ -1,0 +1,253 @@
+<template name="administration">
+	
+
+<div class="ui stackable grid ">
+  		  {{#if Template.subscriptionsReady}}  
+  		<div clsss ="row">
+  			<h1>{{_ "tele_title"}}</h1>
+		</div>
+
+	  	<div class="row">  
+  		
+      		<div class=" raised segment ui five wide column">
+     			<div class="ui five wide column">
+					<div id = "card2" class="ui fluid card">
+				 		
+				 		 	<div class="content">
+				 		 	<img class="right floated ui mini image" src="sensor.png" title="" style="">
+				       			<div class="header">
+				      				{{sensordescriptionS2}}
+				      		    </div>
+				      		</div>
+	 					{{#each sensortelemetrybateryS2}}
+					    	<div class="description">
+					      			<p> <b> {{_ "chg"}}: </b>{{charging}}</p>
+									<p> <b> {{_ "chg_cur"}}: </b>{{ch_curr}} (mA)</p>
+									<p> <b> {{_ "bat_lev"}}: </b>{{batt_level}} (%)</p>
+									<p> <b> {{_ "bat_volt"}}: </b>{{batt_volt}} (V)</p>
+					      		</div>
+				  			
+				  		{{/each}}
+				  		{{#each sensortelemetrybateryS2}}
+					  		<div class="extra content">
+						   	<span class="right floated">
+								        {{_ "last_upd"}}
+								      </span>
+								      <span>
+								         {{sensortelemetrydateS2}}
+								      </span>
+					 		</div>
+					 	{{/each}}
+
+					</div>
+				</div>
+				<div class="ui five wide column">
+
+					<div id = "card4" class="ui fluid card">
+				 		 
+				 		 	<div class="content">
+				 		 	<img class="right floated ui mini image" src="sensor.png" title="" style="">
+				       			<div class="header">
+				      				{{sensordescriptionS4}}
+				      		    </div>
+				      		</div>
+							{{#each sensortelemetrybateryS4}}
+					    		<div class="description">
+					      			<p> <b> {{_ "chg"}}: </b>{{charging}}</p>
+									<p> <b> {{_ "chg_cur"}}: </b>{{ch_curr}} (mA)</p>
+									<p> <b> {{_ "bat_lev"}}: </b>{{batt_level}} (%)</p>
+									<p> <b> {{_ "bat_volt"}}: </b>{{batt_volt}} (V)</p>
+					      		</div>
+				  		{{/each}}
+				  		{{#each sensortelemetrybateryS4}}
+					  		<div class="extra content">
+						   	<span class="right floated">
+								        {{_ "last_upd"}}
+								      </span>
+								      <span>
+								         {{sensortelemetrydateS4}}
+								      </span>
+					 		</div>
+					 	{{/each}}
+					</div>
+				</div>
+			 {{#if $eq userInfo 'administrator'}}	
+				<div class="ui five wide column ">
+				
+					 
+				 	 <div id = "card1" class="ui fluid  card">
+				 		 	<div class="content">
+				       			<img class="right floated ui mini image" src="sensor.png" title="" style="">
+				       			<div class="header">
+				      				{{sensordescriptionS1}}
+				      		    </div>
+				      		</div>
+						{{#each sensortelemetrybateryS1}}
+					    		<div class="description">
+					      			<p> <b> {{_ "chg"}}: </b>{{charging}}</p>
+									<p> <b> {{_ "chg_cur"}}: </b>{{ch_curr}} (mA)</p>
+									<p> <b> {{_ "bat_lev"}}: </b>{{batt_level}} (%)</p>
+									<p> <b> {{_ "bat_volt"}}: </b>{{batt_volt}} (V)</p>
+					      		</div>
+				  		
+				  		
+					  		<div class="extra content">
+						   		
+						   			
+									<span class="right floated">
+								        {{_ "last_upd"}}
+								      </span>
+								      <span>
+								     	
+								         {{sensortelemetrydateS1}}
+								      </span>
+																
+								
+					 		</div>
+					 	{{/each}}
+
+					</div>
+				</div>
+				{{/if}}
+				{{#if $eq userInfo 'administrator'}}	
+				<div class="ui five wide column ">
+				
+					 
+				 	 <div id = "card1" class="ui  fluid card">
+				 		 	<div class="content">
+				       			<img class="right floated ui mini image" src="sensor.png" title="" style="">
+				       			<div class="header">
+				      				{{sensordescriptionS5}}
+				      		    </div>
+				      		</div>
+						{{#each sensortelemetrybateryS5}}
+					    		<div class="description">
+					      			<p> <b> {{_ "chg"}}: </b>{{charging}}</p>
+									<p> <b> {{_ "chg_cur"}}: </b>{{ch_curr}} (mA)</p>
+									<p> <b> {{_ "bat_lev"}}: </b>{{batt_level}} (%)</p>
+									<p> <b> {{_ "bat_volt"}}: </b>{{batt_volt}} (V)</p>
+					      		</div>
+				  		
+				  		
+					  		<div class="extra content">
+						   		
+						   			
+									<span class="right floated">
+								        {{_ "last_upd"}}
+								      </span>
+								      <span>
+								     	
+								         {{sensortelemetrydateS5}}
+								      </span>
+																
+								
+					 		</div>
+					 	{{/each}}
+
+					</div>
+				</div>
+				{{/if}}
+				{{#if $eq userInfo 'administrator'}}	
+				<div class="ui five wide column">
+					
+
+					<div id = "card3" class="ui fluid card">
+				 		 
+				 		 	<div class="content">
+				 		 	<img class="right floated ui mini image" src="sensor.png" title="" style="">
+				       			<div class="header">
+				      				{{sensordescriptionS3}}
+				      		    </div>
+				      		</div>
+				      		{{#each sensortelemetrybateryS3}}    	
+					    		<div class="description">
+					      			<p> <b> {{_ "chg"}}: </b>{{charging}}</p>
+									<p> <b> {{_ "chg_cur"}}: </b>{{ch_curr}} (mA)</p>
+									<p> <b> {{_ "bat_lev"}}: </b>{{batt_level}} (%)</p>
+									<p> <b> {{_ "bat_volt"}}: </b>{{batt_volt}} (V)</p>
+					      		</div>
+				  			
+				  		{{/each}}
+				  		{{#each sensortelemetrybateryS3}}
+					  		<div class="extra content">
+						   	<span class="right floated">
+								        {{_ "last_upd"}}
+								      </span>
+								      <span>
+								         {{sensortelemetrydateS3}}
+								      </span>
+					 		</div>
+					 	{{/each}}
+					</div>
+				</div>
+				{{/if}}
+
+
+			</div>
+		
+				
+	<!-- Sensor map -->
+	
+				<div class="eleven wide column">
+			 
+			      <div class="map-container" id="map_canvas">
+			    
+			       <!--  {{> googleMap name="map" options=mapOptions}}
+			 -->
+			 
+			 			  {{> googleMap name="sensorMap" options=sensorMapOptions}}
+			 
+
+			      </div>
+			 	 
+			    </div>
+		</div>
+			
+ {{#if $eq userInfo 'administrator'}}	
+		<div class="row">  
+  		
+      		<div class=" raised segment ui eight wide column">
+     			<h1>{{_ "ch_desc"}}</h1>
+				{{#each sensornames}}
+					
+					<div>
+						<form class ="ui small form segment">
+							<div class="header">
+								
+								<h4 class="header">{{_ "nodename"}}: {{nodename}}</h4>
+								<div class="eight wide field">
+							    	<h4><strong>IMEI: </strong> {{IMEI}}</h4> 	
+							    </div>
+							    <p></p>
+
+							</div>
+							
+							<div class="two fields">
+								<div class="eight wide field">
+								    <input type="text" value="{{description}}" name="description">  
+							    </div>
+							    
+							    <button class="ui button" type="submit">{{_ "update_desc"}}</button>	
+						    </div>
+					        
+				    	</form>
+				     
+				    </div>
+   				{{/each}}
+			</div>
+		</div>
+	{{/if}}
+
+
+     {{else}}
+      {{> spinner}}
+  {{/if}}
+
+  
+	</div>	<!-- end grid -->
+
+
+
+
+	
+</template>
