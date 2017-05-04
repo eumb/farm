@@ -16,8 +16,8 @@ Meteor.methods({
  
     var data = [];    
  
-    var contacts = Sensors.find({'w_1':{$exists:true}},{sort: {'created_at' : -1}}).fetch();
-    _.each(contacts, function(c) {
+    var sensorData = Sensors.find({'w_1':{$exists:true}},{sort: {'created_at' : -1}}).fetch();
+    _.each(sensorData, function(c) {
       data.push([
         c.nodename,
         c.w_1,
@@ -25,7 +25,7 @@ Meteor.methods({
         c.w_3,
         c.soil_t,
         //c.created_at,
-        moment.utc(c.created_at).format("DD/MM/YYYY")
+        moment(c.created_at).zone("+3:00").format("DD/MM/YYYY,H:mm")
       
       ]);
     });

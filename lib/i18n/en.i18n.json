@@ -1,6 +1,5 @@
 { 
-"no_alert": "There are no alerts" ,
-"no_reco":"There are no recommandations at the moment",
+
 "change_language":"Language",
 "vane_header":"Wind direction",
 "vane_description":"Current wind direction",
@@ -37,8 +36,8 @@ Waspmote Plug & Sense! Smart Agriculture are installed outdoors. One, with the a
 "pluv1_desc":"precipitations for the current period",
 "pluv2_header":"One hour precipitations",
 "pluv2_desc":" precipitations in the previous one-hour period",
-"pluv3_header":"One day precipitations",
-"pluv3_desc":"accumulated precipitation in the last 24 hours",
+"pluv3_header":"Precipitations 24h",
+"pluv3_desc":"Accumulated precipitations",
 "air_temp_header":"Ambient temperature",
 "air_temp_desc":"Temperature sensor with operational range: -40 ~ +85 ºC",
 "air_press_header":"Atmospheric pressure",
@@ -54,6 +53,9 @@ Waspmote Plug & Sense! Smart Agriculture are installed outdoors. One, with the a
 "h50":"Humidity 50cm",
 "mainboard_title":"Latest information",
 "mainboard_info":"Recomandations & Alerts",
-"new_comment":"Add/Update comment"
-
+"no_alert": "There are no alerts" ,
+"no_reco":"There are no recommandations at the moment",
+"dummy_alert1": "Sowing corn in the field" ,
+"new_comment":"Add/Update comment",
+"soil_temp_accumulated":"Accumulated mean soil temperature"
 }

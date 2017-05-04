@@ -2,14 +2,15 @@ import { Template } from 'meteor/templating';
 import { SensorNames } from '../imports/collections/sensors.js';
 import { Sensors } from '../imports/collections/sensors.js';
 
-
+var subscriptions = new SubsManager();
 Template.sidebar.onCreated(function () {
     var self = this;
 
     self.autorun(function() {
-        self.subscribe("sensornames",function(){
-         
-        });
+        //self.subscribe("sensornames",function(){
+           //});
+         subscriptions.subscribe('sensornames');
+      
           
     });
 
@@ -71,7 +72,7 @@ Template.sidebar.helpers({
 
 
     Session.set('distinctNamesFromNames',distinctNamesFromNames);
-    Session.set('SenzorDescription',distinctNamesFromNames.description);
+  
     return Session.get('distinctNamesFromNames');
 	},
 

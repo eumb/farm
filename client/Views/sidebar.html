@@ -18,12 +18,13 @@
       <i class="large home icon"></i>
       {{_ "mainboard"}}
     </a>
-    
+     {{#if $eq userInfo 'administrator'}}
     <div class="ui divider"></div>
     <a href ="/history" class="item item_menu">
        <i class="large block layout icon"></i>
       {{_ "hist"}}
     </a> 
+    {{/if}}
     <div class="ui divider"></div>
     
    

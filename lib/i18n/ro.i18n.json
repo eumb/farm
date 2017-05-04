@@ -1,5 +1,4 @@
-{"no_alert":"Nu exista alerte disponibile",
-"no_reco":"Nici o recomandare",
+{
 "change_language":"Limba",
 "vane_header":"Directie vant",
 "vane_description":"Directia curenta a vantului",
@@ -38,11 +37,11 @@ Waspmote Plug & Sense! Smart Agriculture instalate in exterior colecteaza date s
 "ane_header":"Viteza vant",
 "ane_description":"Viteza vantului 0-240 km/h",
 "pluv1_header":"Precipitatii curente",
-"pluv1_desc":"Precipitatii pentru periada curenta",
+"pluv1_desc":"Precipitatii pentru perioada curenta",
 "pluv2_header":"Precipitatii 1h",
 "pluv2_desc":" Precipitatii in ultima ora",
-"pluv3_header":"Precipitatii 24 h",
-"pluv3_desc":"Precipitaii acumulate in ultimele 24 ore",
+"pluv3_header":"Precipitatii 24h",
+"pluv3_desc":"Precipitaii acumulate",
 "air_temp_header":"Temperatura atmosferica",
 "air_temp_desc":"Temperatura atmosferica curenta; interval operare: -40 ~ +85 ºC",
 "air_press_header":"Presiunea atmosferica",
@@ -58,6 +57,10 @@ Waspmote Plug & Sense! Smart Agriculture instalate in exterior colecteaza date s
 "h50":"Umiditate 50cm",
 "mainboard_title":"Ultimele informatii",
 "mainboard_info":"Recomandari si alerte",
-"new_comment":"Adauga/modifica comentariu"
+"dummy_alert1": "Semanat porumb in camp",
+"no_alert":"Nu exista alerte disponibile",
+"no_reco":"Nici o recomandare",
+"new_comment":"Adauga/modifica comentariu",
+"soil_temp_accumulated":"Temperatura solului acumulata"
 }
  

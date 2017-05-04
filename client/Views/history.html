@@ -8,6 +8,46 @@
 	  		<button id="export" class="export-data btn btn-success" >{{_ "exportButton"}}</button>
 	  	</div>
 	</div>
+	 <div class="row">
+       <div class="twelve column">
+        <div class="graphic">
+      {{> example1}}
+        </div>
+        </div>
+      </div>
+
+  <!--  <div class="row">
+       <div class="twelve column">
+        
+     {{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}}
+        
+        </div>
+      </div> -->
+         <div class="row">
+       <div class="twelve column">
+        <h1>Device data</h1>
+
+        {{#each devicedatas}}
+          {{serialNumber}}
+          {{resources}}
+        {{/each}}
+        
+        </div>
+      </div>
   </div>
+
+
 </template>
 
+
+
+
+<template name="example1">
+
+  <!-- <a href="{{urlFor 'home'}}">Home</a><br>
+  <a href="{{urlFor 'example2'}}">Date Based Line</a><br>
+  <a href="{{urlFor 'example3'}}">Pie Chart Example</a><br><br><br> -->
+ <div id="chartdiv">
+
+  </div>
+</template>

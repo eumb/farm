@@ -1,11 +1,14 @@
 import { Template } from 'meteor/templating';
 import { SensorNames } from '../imports/collections/sensors.js';
 import { Sensors } from '../imports/collections/sensors.js';
+import { Meteor } from 'meteor/meteor'; 
 
 
+
+  
 Template.body.onCreated(function () {
     var self = this;
-    
+
   
     self.autorun(function() {
         self.subscribe('sensorvalues',Session.get('senzor'));
@@ -13,11 +16,21 @@ Template.body.onCreated(function () {
     });
       Session.set("itemMenu","Home");//default value
 
+      
+
 
 });
 
+/*if (Meteor.isClient){
 
+  //export const Impact=DDP.connect('http://bucurila.go.ro:4000');
+  
+  //console.log(Impact);
 
+  
+  
+  
+}*/
 //set Session in order to have the senzor name for which to create the graph
 Template.body.events({
     'click .senzor_name':function(){
@@ -31,6 +44,19 @@ Template.body.events({
 
       console.log(description);
     	Session.set("senzor",senzor);
+
+      Session.set("tempdisplay", "24hdata");
+      
+      Session.set("humiddisplay", "24hdata");
+      
+      Session.set("precipdisplay", "24hdata");
+      
+      Session.set("airHumidDisplay", "24hdata");
+      
+      Session.set("airPressDisplay", "24hdata");
+     
+      Session.set("airTempDisplay", "24hdata"); 
+
 
       Session.set('SenzorDescription',description_data);
     },
@@ -66,3 +92,5 @@ Meteor.Spinner.options = {
     //top: 'auto', // Top position relative to parent in px
     //left: 'auto' // Left position relative to parent in px
 };
+
+
